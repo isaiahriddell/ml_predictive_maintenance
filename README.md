@@ -13,7 +13,7 @@ Unplanned equipment downtime costs industrial manufacturers billions annually. T
 - **Model Interpretation:** Extracted **Feature Importances** to validate that predictions align with physical equipment dynamics (prioritizing temperature, electrical current, and vibration).
 
 ## Why Random Forest?
-- **Robustness to Correlation:** Industrial sensors (such as vibration, temperature, and current) naturally correlate with one another[cite: 3]. Unlike linear models that destabilize under multicollinearity, Random Forests are completely immune to feature correlation.
+- **Robustness to Correlation:** Industrial sensors (such as vibration, temperature, and current) naturally correlate with one another. Unlike linear models that destabilize under multicollinearity, Random Forests are completely immune to feature correlation.
 - **Zero Scaling Requirements:** The algorithm relies entirely on relative threshold splits rather than strict mathematical coefficients, meaning raw, unscaled sensor telemetry can be processed directly without data leakage risks.
 - **Built-in Noise Reduction:** By aggregating 100 independent decision trees trained on randomized data subsets, the ensemble naturally dampens single-point sensor anomalies and outlier glitches.
 
